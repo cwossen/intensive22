@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#dog"> Dog </a></li>
+            <li><a href="#dolphin"> Dolphin</a></li>
+            <li><a href="raven">Raven</a>></a></li>
+        </ul>
+    </nav>
+    <main>
+
+        Something something
+        <h1>Animals</h1>
+        <section id="dog">
+            <h2>Dog</h2>
+            <img src="animals/mammals/dog.jpg">
+        </section>
+        <section id="dolphin">
+            <h2>Dolphin</h2>
+            <img src="animals/mammals/dolphin.jpg">
+        </section>
+        <section id="raven">
+            <h2>Raven</h2>
+            <img src="animals/mammals/birds.jpg">
+        </section>
+    </main>
+</body>
+
+</html>
