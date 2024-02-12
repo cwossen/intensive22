@@ -1,0 +1,158 @@
+.top,
+.card-area {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    justify-content: space-around;
+}
+
+.enemy-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex: 1;
+}
+
+.enemypic {
+    height: 200px;
+}
+
+.enemymove-zone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 10px;
+    gap: 1em;
+}
+
+.PC-cards {
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+}
+
+/* Style the child divs */
+.enemyMove {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.moveset {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card {
+    margin: 1em;
+    width: 25%;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .5em;
+    border: 2px solid #0f0f0f;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, .5);
+}
+
+.cardpic {
+    height: 8em;
+    padding-bottom: 1em;
+}
+
+.carddesc {
+    width: 225px;
+    height: 100px;
+}
+
+.cardtitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card:hover {
+    background-color: gray;
+}
+
+h3 {
+    text-align: center;
+}
+
+.player-healthbar {
+    padding: 1em;
+    position: absolute;
+    bottom: -2em;
+    background: #f0f0f0;
+    border: 2px solid black;
+    width: 80%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-healthbar progress {
+    flex: 4;
+}
+
+.player-healthbar h5 {
+    position: fixed;
+    bottom: -.6em;
+    padding: 5px;
+    background: #f0f0f0;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 393px), only screen and (max-height: 600px){
+    #battle-zone {
+        background-image: none;
+        background-color: firebrick;
+    }
+    .enemypic {
+        height: 10rem;
+        box-shadow: 0 0 0 2px black;
+    }
+    .card-area {
+        width: 80%;
+    }
+    .cardpic {
+        height: 5em;
+    }
+    .carddesc {
+        font-size: .8rem;
+        line-height: 1.2rem;
+        height: unset;
+        text-shadow: 0px 0px .5rem black;
+    }
+    .cardtitle {
+        font-size: .6rem;
+    }
+    .player-healthbar {
+        color: black;
+    }
+    .enemymove-zone {
+        line-height: 1.2rem;
+        text-shadow: 0px 0px .5rem black;
+    }
+    .enemyMove {
+        max-height: 5em;
+    }
+    .cardtitle {
+        font-weight: normal;
+    }
+}
