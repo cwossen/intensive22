@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Frogcoin.css">
+</head>
+
+<body>
+    <script>
+
+
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+
+        function handleScrollAnimation() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('visible');
+                } else {
+                    element.classList.remove('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScrollAnimation);
+
+
+    </script>
+    <div class="navbar">
+        <div class="froghead"></div>
+        <div class="chibifrog"></div>
+
+        <!-- Dropdown for "Use Frogcoin" -->
+        <div class="dropdown">
+            <div class="dropbtn">Use Frogcoin</div>
+            <div class="dropdown-content">
+                <a href="#">Bullshit</a>
+                <a href="#">Jibber Jabber</a>
+                <a href="#">Snake Oil</a>
+            </div>
+        </div>
+
+        <!-- Dropdown for "Learn" -->
+
+        <div class="dropdown">
+            <div class="dropbtn">Learn</div>
+            <div class="dropdown-content">
+                <a href="#">Bullshit</a>
+                <a href="#">Jibber Jabber</a>
+                <a href="#">Snake Oil</a>
+            </div>
+        </div>
+
+        <!-- Dropdown for "Developers" -->
+
+        <div class="dropdown">
+            <div class="dropbtn">Developers</div>
+            <div class="dropdown-content">
+                <a href="#">Bullshit</a>
+                <a href="#">Jibber Jabber</a>
+                <a href="#">Snake Oil</a>
+            </div>
+        </div>
+
+        <!-- Dropdown for "Enterprise" -->
+        <div class="dropdown">
+            <div class="dropbtn">Enterprise</div>
+            <div class="dropdown-content">
+                <a href="#">Bullshit</a>
+                <a href="#">Jibber Jabber</a>
+                <a href="#">Snake Oil</a>
+            </div>
+        </div>
+
+        <!-- Dropdown for "Community" -->
+
+        <div class="dropdown">
+            <div class="dropbtn">Community</div>
+            <div class="dropdown-content">
+                <a href="#">Bullshit</a>
+                <a href="#">Jibber Jabber</a>
+                <a href="#">Snake Oil</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Other content of the page -->
+    <div class="image-container">
+        <div class="bg-image img1">
+            <img src="./adventure-time.gif" class="textbackground1 animate-on-scroll" alt="Text content">
+        </div>
+        <div class="bg-image img2">
+            <img src="./S4e23_Mega_Frog_gently_eating_Jake.webp" class="textbackground2 animate-on-scroll"
+                alt="Text content">
+
+        </div>
+        <div class="bg-image img3">
+            <img src="./S4e23_Finn_Mega_Frog.webp" class="textbackground3 animate-on-scroll" alt="Text content">
+
+        </div>
+        <div class="bg-image img4">
+            <img src="./S4e23_Prince_Huge_transformed.webp" class="textbackground4 animate-on-scroll"
+                alt="Text content">
+
+        </div>
+    </div>
+</body>
+
+</html>
