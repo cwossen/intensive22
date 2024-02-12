@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Press+Start+2P&display=swap');
+
+.sessionID {
+    display: none;
+}
+
+.mainscreen {
+    margin: 1em auto;
+    border: inset 5px gray;
+    padding: 1em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #0F0F0F;
+    background-image: url("../media/map/mapbg.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    font-family: "Press Start 2P";
+    color: white;
+}
+
+.main1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaderboardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.leaderboard {
+    background: rgba(0,0,0,.75);
+}
+
+table,
+thead,
+td {
+    border: 1px solid;
+    text-align: center;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 30px;
+    /* color: black */
+}
+
+table {
+    width: 80%
+}
+
+.errorresult {
+    margin-top: 5em;
+    font-weight: bold;
+    font-size: 30px;
+    animation: blink 1s infinite alternate;
+}
+
+.tw,
+.fb {
+    display: none;
+    margin: 0;
+}
+
+.ribbon {
+    height: 50px;
+    fill: white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        /* Start with full opacity */
+    }
+
+    100% {
+        opacity: 0;
+        /* End with zero opacity (invisible) */
+    }
+}
+
+.upload {
+    height: 50px;
+    width: 180px;
+    margin-top: 30px;
+    font-family: "Press Start 2P";
+    background-color: pink;
+}
+
+.mainscreen {
+    height: 50px;
+    width: 180px;
+    /* margin-top: 30px; */
+    font-family: "Press Start 2P";
+}
+
+
+.sns {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+td {
+    padding: 10px;
+}
